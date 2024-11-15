@@ -15,7 +15,16 @@ const server = http.createServer((req,res) => {
         res.end(JSON.stringify({
             favorite_hobby: 'Listening Poems, Listening Songs, Watching Movies',
             fun_activity: 'Playing Pool'
-        }));
+        }
+    ));
+    }
+    else if (req.url === '/dream' && req.method === 'GET'){
+        res.statusCode = 200;
+        res.end('Dream: My Dream is to lead my self on my own route. And after finding my interest properly I want to become an expert in that field.');
+    }
+    else{
+        res.statusCode = 404;
+        res.end('404 Not Found');
     }
 });
 
