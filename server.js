@@ -10,6 +10,13 @@ const server = http.createServer((req,res) => {
         res.statusCode = 200;
         res.end('FullName: Mintesniot Bekele Negash');
     }
+    else if (req.url === '/hobby' && req.method === 'GET'){
+        res.statusCode = 200;
+        res.end(JSON.stringify({
+            favorite_hobby: 'Listening Poems, Listening Songs, Watching Movies',
+            fun_activity: 'Playing Pool'
+        }));
+    }
 });
 
 server.listen(port,() => {
