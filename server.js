@@ -8,7 +8,7 @@ const server = http.createServer((req,res) => {
     }
     else if (req.url === '/name' && req.method === 'GET'){
         res.statusCode = 200;
-        res.end('FullName: Mintesniot Bekele Negash');
+        res.end('FullName: Mintesinot Bekele Negash');
     }
     else if (req.url === '/hobby' && req.method === 'GET'){
         res.statusCode = 200;
@@ -20,7 +20,7 @@ const server = http.createServer((req,res) => {
     }
     else if (req.url === '/dream' && req.method === 'GET'){
         res.statusCode = 200;
-        res.end('Dream: My Dream is to lead my self on my own route. And after finding my interest properly I want to become an expert in that field.');
+        res.end('Dream: My Dream is to lead myself on my own route. And after finding my interest properly I want to become an expert in that field.');
     }
     else{
         res.statusCode = 404;
