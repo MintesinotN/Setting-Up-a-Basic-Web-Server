@@ -27,7 +27,7 @@ This project is built using **Node.js**. No external dependencies are required.
 
 **2. Navigate into the project directory:**
 
-    `cd https://github.com/MintesinotN/Setting-Up-a-Basic-Web-Server.git`
+    `cd Setting-Up-a-Basic-Web-Server`
 
 **3. Ensure you have Node.js installed on your machine. You can check by running:**
 
